@@ -14,8 +14,8 @@
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <Samriddha Sanyal>
+ * @date <10.12.2023 >
  *
  */
 
@@ -37,7 +37,42 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
+  unsigned char minimum = 0;
+  unsigned char maximum = 0;
+  float mean = 0;
+  unsigned char median = 0;
+  printf("Array before sorting: \n");
+  print_array(&test, SIZE);
+  median = find_median(&test, SIZE);
+  mean = find_mean(&test, SIZE);
+  maximum = find_maximum(&test, SIZE);
+  minimum = find_minimum(&test, SIZE);
+  print_statistics(minimum, maximum, mean, median);
+  sort_array(&test, SIZE);
+  printf("Array after sorting: \n");
+  print_array(&test, SIZE);
 
+}
+
+void print_statistics (unsigned char minimum, unsigned char maximum, float mean, unsigned char median){
+}
+
+void print_array (unsigned char *array, unsigned int counter){
+}
+
+unsigned char find_median (unsigned char *array, unsigned int counter){
+}
+
+float find_mean (unsigned char *array, unsigned int counter){
+}
+
+unsigned char find_maximum (unsigned char *array, unsigned int counter){
+}
+
+unsigned char find_minimum (unsigned char *array, unsigned int counter){
+}
+
+void sort_array (unsigned char *array, unsigned int counter){
 }
 
 /* Add other Implementation File Code Here */
